@@ -58,8 +58,18 @@ div[class^="category-title-header"] {
   .category-title-description {
     a,
     a:visited {
-      color: var(--primary);
+      color: inherit;
       text-decoration: underline;
+      background: none;
+      padding: unset;
+    }
+    a.mention, a.mention-group {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: inherit;
+    }
+    .mention, .mention-group {
+      color: inherit;
     }
   }
 
